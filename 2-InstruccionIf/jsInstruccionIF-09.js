@@ -1,6 +1,11 @@
 function mostrar()
 {
-	//Genero el número RANDOM entre 1 y 10 
-	alert("ok");	
+	let numeroAlearotio;
+	let maximo = 10;
+	let minimo = 1;
+
+	numeroAlearotio = Math.round(Math.random() * (maximo - minimo) + minimo);
+
+	alert(numeroAlearotio);
 
 }//FIN DE LA FUNCIÓN
