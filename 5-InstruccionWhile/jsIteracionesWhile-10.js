@@ -19,8 +19,8 @@ function mostrar()
 	let contadorNegativos = 0;
 	let ceros = 0;
 	let contadorPares = 0;
-	let promedioNegativos;
-	let promedioPositivos;
+	let promedioNegativos = 0;
+	let promedioPositivos = 0;
 	let diferencia;
 	let seguir;
 
@@ -41,8 +41,14 @@ function mostrar()
 			ceros ++;
 		}
 
-		promedioNegativos = sumaNegativos / contadorNegativos;
-		promedioPositivos = sumaPositivos / contadorPositivos;
+		if(contadorNegativos != 0){
+			promedioNegativos = sumaNegativos / contadorNegativos;
+		}
+		
+		if(contadorPositivos != 0){
+			promedioPositivos = sumaPositivos / contadorPositivos;
+		}
+		
 
 		diferencia = contadorPositivos - contadorNegativos;
 
